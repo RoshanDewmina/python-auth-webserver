@@ -1,0 +1,20 @@
+### Root Endpoint
+GET http://127.0.0.1:8000/
+
+### Admin Login
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "password123"
+}
+
+### Get Users (with Authorization Token)
+GET http://127.0.0.1:8000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJleHAiOjE3MzY4ODY0ODR9.NEF_6ix0KbGRRZf-uRbR9sImNI4-NreCrQkjdwcA7Bs
+
+
+### Get Products (with Authorization Token)
+GET http://127.0.0.1:8000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJleHAiOjE3MzY4ODY0ODR9.NEF_6ix0KbGRRZf-uRbR9sImNI4-NreCrQkjdwcA7Bs

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+redis
+asyncpg
+python-decouple
+bcrypt==4.0.1
+
+passlib
+pyjwt
